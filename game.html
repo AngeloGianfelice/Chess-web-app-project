@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHESS WEBSITE</title>
+        <link rel="shortcut icon" href="#">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/chess.js/chess.js"></script>
+        <link rel="stylesheet" href="node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.css">
+        <script src="node_modules/@chrisoakman/chessboardjs/dist/chessboard-1.0.0.min.js"></script>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1>PLAY AGAINST STOCKFISH 11</h1>
+        <body>
+          <div class="row">
+            <div class="col-sm-7 col-md-6">
+              <span class="h3" id="time1">0:05:00</span>
+              <div id="myBoard" style="width: 600px"></div>
+              <span class="h3" id="time2">0:05:00</span>
+              <hr>
+              <div id="engineStatus">...</div>
+            </div>
+            <div class="col-sm-5 col-md-6">
+              <h3>Moves:</h3>
+              <div id="pgn"></div>
+              <hr>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="timeBase" class="control-label col-xs-4 col-sm-6 col-md-4">Base time (min)</label>
+                  <div class="col-xs-4 col-sm-6 col-md-4">
+                    <input type="number" class="form-control" id="timeBase" value="5"></input>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="timeInc" class="control-label col-xs-4 col-sm-6 col-md-4">Increment (sec)</label>
+                  <div class="col-xs-4 col-sm-6 col-md-4">
+                    <input type="number" class="form-control" id="timeInc" value="2"></input>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="skillLevel" class="control-label col-xs-4 col-sm-6 col-md-4">Skill Level (0-20)</label>
+                  <div class="col-xs-4 col-sm-6 col-md-4">
+                    <input type="number" class="form-control" id="skillLevel" value="20"></input>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4">I play</label>
+                  <div class="col-xs-4 col-sm-6 col-md-4">
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-primary active" id="color-white"><input type="radio" name="color">White</label>
+                      <label class="btn btn-primary" id="color-black"><input type="radio" name="color">Black</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="showScore" class="control-label col-xs-4 col-sm-6 col-md-4">Show score</label>
+                  <div class="col-xs-4 col-sm-6 col-md-4">
+                    <input type="checkbox" class="form-control" id="showScore" checked required></input>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4"></label>
+                  <div class="col-xs-4 col-sm-6 col-md-4">
+                    <button type="button" class="btn btn-primary" onclick="newGame()">New Game</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <script src="js/enginegame.js"></script>
+          <script>
+            var game = engineGame({book: 'book.bin'});
+            function newGame() {
+              var baseTime = parseFloat($('#timeBase').val()) * 60;
+              var inc = parseFloat($('#timeInc').val());
+              var skill = parseInt($('#skillLevel').val());
+              game.reset();
+              game.setTime(baseTime, inc);
+              game.setSkillLevel(skill);
+              game.setPlayerColor($('#color-white').hasClass('active') ? 'white' : 'black');
+              game.setDisplayScore($('#showScore').is(':checked'));
+              game.start();
+            }
+            newGame();
+          </script>
+    </body>
+</html>
