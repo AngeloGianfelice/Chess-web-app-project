@@ -3,11 +3,11 @@
     <head>
     <Title>FrogChess.com</Title>
     <link rel=stylesheet href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel=stylesheet href="css/index.css">
+    <link rel=stylesheet href="public/css/index.css">
     </head>
     <body>
         <header>
-            <img src="img/logo.jpg" class="logo">
+            <img src="public/img/logo.jpg" class="logo">
             <nav>
                 <ul class="nav-area">
                     <li><a href="index.html">Home</a></li>
@@ -16,13 +16,35 @@
                     <li><a href="About.html">About</a></li>
                 </ul>
             </nav>
-            <a href="#" class="btn-area">login</a>
+            <button class="open-button" onclick="openForm()">Login</button>
         </header>
         <section>
             <h1>Welcome to FrogChess.com</h1>
             <text>where you can play and learn about your favourite hobby, the ancient and nobile game of Chess</text>
             <br><br>
-            <a href="#" class="btn-area">login</a>
+            <button class="open-button" onclick="openForm()">Login</button>
+            <div class="form-popup" id="myForm">
+                <form action="post" class="form-container">
+                  <h1 style="color:black">Login</h1>
+                  <label for="email" style="color:black"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw" style="color:black"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <script>
+              function openForm() {
+                document.getElementById("myForm").style.display = "block";
+              }
+              
+              function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+              }
+              </script>
             or
             <a href="game.html" class="btn-area">Play as Guest</a> 
         </section>
