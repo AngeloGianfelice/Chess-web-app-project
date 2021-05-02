@@ -1,6 +1,7 @@
 table{
     margin-left: auto;
     margin-right: auto;
+    height:100%;
     width:50%;
 }
 .button-wrapper{
@@ -8,6 +9,7 @@ table{
 }
 .section-div{
     padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
