@@ -77,52 +77,36 @@ footer{
     text-align:left;
     padding:0% 1%;
 }
-.open-button {
-    cursor: pointer;
-    color:#fff;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 10px 30px;
-    border-radius: 20px;
-    border: #fff solid;
-    background:transparent;
-  }
-  
-  /* The popup form - hidden by default */
-  .form-popup {
+/* The popup form - hidden by default */
+.form-popup {
     display: none;
     position: fixed;
     bottom: 0;
     right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 9;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
+}
+/* Add styles to the form container */
+.form-container {
     max-width: 300px;
     padding: 10px;
     background-color: white;
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=password] {
+}
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: #ddd;
     outline: none;
-  }
-  
-  /* Set a style for the submit/login button */
-  .form-container .btn {
+}
+/* Set a style for the submit/login button */
+.form-container .btn {
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
@@ -131,17 +115,21 @@ footer{
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
     background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover{
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover{
     opacity: 1;
-  }
-  .open-button:hover{
-      background-color: #d22938;
-  }
+}
+.reglink{
+    transition: .3s;
+    color:#fff;
+    cursor:pointer;
+}
+.reglink:hover{
+    color:#d22938;
+}
+
