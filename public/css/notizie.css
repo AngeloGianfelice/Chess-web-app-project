@@ -1,0 +1,52 @@
+.row{
+    background-color: white;
+    border-radius: 30px;
+    height: 300px;
+}
+.column{
+    float: left;
+    width:20%;
+    padding:10px;
+}
+.titolo {
+    color:black;
+    text-align: center;
+    font-size:large;
+}
+.foto{
+    height: 50%;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    display:none;
+}
+.foto[src]{
+    display:block;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #4e555a;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  position :absolute;
+  top:40%;
+  left:45%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.title{
+  background-color: white;
+  color:black;
+}

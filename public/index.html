@@ -2,19 +2,19 @@
 <html>
     <head>
     <Title>FrogChess.com</Title>
-    <link rel="shortcut icon" type="image/ico" href="public/img/favicon.ico">
-    <link rel=stylesheet href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel=stylesheet href="public/css/index.css">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <link rel=stylesheet href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel=stylesheet href="css/index.css">
     </head>
     <body>
         <header>
-            <img src="public/img/logo.jpg" class="logo">
+            <img src="img/logo.jpg" class="logo">
             <nav>
                 <ul class="nav-area">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="public/pages/Notizie.html">Notizie</a></li>
-                    <li><a href="public/pages/Impara.html">Impara</a></li>
-                    <li><a href="public/pages/About.html">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Notizie.html">Notizie</a></li>
+                    <li><a href="Impara.html">Impara</a></li>
+                    <li><a href="About.html">About</a></li>
                 </ul>
             </nav>
             <button class="btn-area" onclick="openLoginForm()">Login</button>
@@ -38,7 +38,8 @@
                 </form>
             </div>
             or
-            <a href="game.html" class="btn-area">Play as Guest</a> <br>
+            <a href="enginegame.html" class="btn-area">Play against stockfish 11</a> 
+            <a href="pvpgame.html" class="btn-area">Play pvpgame</a><br>
             Not registered yet? Click  
             <a class="reglink" onclick="openRegForm()">here</a>
             to Sign up
@@ -56,19 +57,25 @@
                 </form>
             </div>
             <script>
-              function openLoginForm() {
-                 document.getElementById("myLoginForm").style.display = "block";
-              }
-              function openRegForm(){
-                document.getElementById("myRegForm").style.display = "block";
-              }
-              function closeLoginForm() {
-                document.getElementById("myLoginForm").style.display = "none";
-              }
-              function closeRegForm() {
-                document.getElementById("myRegForm").style.display = "none";
-              }
-              </script>
+                function openLoginForm(){
+                    if(document.getElementById("myRegForm").style.display=="block"){
+                        closeRegForm();
+                    }
+                    document.getElementById("myLoginForm").style.display = "block";
+                }
+                function openRegForm(){
+                    if(document.getElementById("myLoginForm").style.display=="block"){
+                        closeLoginForm();
+                        }
+                    document.getElementById("myRegForm").style.display = "block";
+                }
+                function closeLoginForm() {
+                    document.getElementById("myLoginForm").style.display = "none";
+                }
+                function closeRegForm() {
+                    document.getElementById("myRegForm").style.display = "none";
+                }
+            </script>
         </section>
         <footer>For info please contact us at : gianfelice.1851260@studenti.uniroma1.it  or  morsello.1851339@studenti.uniroma1.it</footer>
     </body>

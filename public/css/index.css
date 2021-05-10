@@ -68,8 +68,7 @@ section{
     padding: 5px;
 }
 footer{
-    position: absolute;
-    bottom:0%;
+    bottom:0;
     height:60px;
     width:100%;
     background:black;
@@ -132,4 +131,5 @@ footer{
 .reglink:hover{
     color:#d22938;
 }
+
 

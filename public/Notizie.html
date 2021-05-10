@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <Title>FrogChess.com</Title>
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <script src="jquery/dist/jquery.min.js"></script>
+    <link rel=stylesheet href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel=stylesheet href="css/index.css">
+    <link rel=stylesheet href="css/notizie.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" class="logo">
+            <nav>
+                <ul class="nav-area">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Notizie</a></li>
+                    <li><a href="Impara.html">Impara</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="btn-area" onclick="openLoginForm()">Login</button>
+            <div class="form-popup" id="myLoginForm">
+                <form action="post" class="form-container">
+                  <h1 style="color:black">Login</h1>
+                  <label for="email" style="color:black"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw" style="color:black"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                </form>
+            </div>
+            <script>
+                function openLoginForm(){
+                    document.getElementById("myLoginForm").style.display = "block";
+                }
+                function openRegForm(){
+                    document.getElementById("myRegForm").style.display = "block";
+                }
+                function closeLoginForm() {
+                    document.getElementById("myLoginForm").style.display = "none";
+                }
+                function closeRegForm() {
+                    document.getElementById("myRegForm").style.display = "none";
+                }
+            </script>
+        </header>
+        <section style="padding-top: 2%;">
+            <text class="btn-area title" style="font-size:40px; position: absolute; left:72px; cursor:auto">Notizie</text>
+            <button class="btn-area title" onclick="document.location.reload()" style="position: relative;
+            left: 90%;">Ricarica</button>
+            <div class="loader"></div>
+            <div class="row" style="margin-top: +50px;">
+                <div class="column">
+                    <a id="link1">
+                    <img class="foto" id="foto1">
+                    </a><br>
+                    <text class="titolo" id="titolo1"></text>
+                </div>
+                <div class="column">
+                    <a id="link2">
+                    <img class="foto" id="foto2">
+                    </a><br>
+                    <text class="titolo" id="titolo2"></text>    
+                </div>
+                <div class="column">
+                    <a id="link3">
+                    <img class="foto" id="foto3">
+                    </a><br>
+                    <text class="titolo" id="titolo3"></text>    
+                </div>
+                <div class="column">
+                    <a id="link4">
+                    <img class="foto" id="foto4">
+                    </a><br>
+                    <text class="titolo" id="titolo4"></text>    
+                </div>
+                <div class="column">
+                    <a id="link5">
+                    <img class="foto" id="foto5">
+                    </a><br>
+                    <text class="titolo" id="titolo5"></text>    
+                </div>
+            </div>
+        </section>
+        <script src="js/webscraper.js"></script>
+        <footer>For info please contact us at : gianfelice.1851260@studenti.uniroma1.it  or  morsello.1851339@studenti.uniroma1.it</footer>
+    </body>
+</html>

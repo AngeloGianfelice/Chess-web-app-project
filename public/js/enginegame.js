@@ -1,12 +1,25 @@
+var game = engineGame({book: '../book.bin'});
+newGame();
+function newGame() {
+    var baseTime = parseFloat($('#timeBase').val()) * 60;
+    var inc = parseFloat($('#timeInc').val());
+    var skill = parseInt($('#skillLevel').val());
+    game.reset();
+    game.setTime(baseTime, inc);
+    game.setSkillLevel(skill);
+    game.setPlayerColor($('#color-white').hasClass('active') ? 'white' : 'black');
+    game.setDisplayScore($('#showScore').is(':checked'));
+    game.start();
+}
 function engineGame(options) {
-    const piece_moved_sound=new Audio("sounds/piece_moved.mp3");
-    const check_sound=new Audio("sounds/check.mp3");
-    const lost_sound=new Audio("sounds/lost.mp3");
-    const won_or_drawn_sound=new Audio("sounds/won_or_drawn.mp3"); 
+    const piece_moved_sound=new Audio("../sounds/piece_moved.mp3");
+    const check_sound=new Audio("../sounds/check.mp3");
+    const lost_sound=new Audio("../sounds/lost.mp3");
+    const won_or_drawn_sound=new Audio("../sounds/won_or_drawn.mp3"); 
     options = options || {}
     var game = new Chess();
     var board;
-    var engine = new Worker(options.stockfishjs || 'js/stockfish.js');
+    var engine = new Worker(options.stockfishjs || '../js/stockfish.js');
     var engineStatus = {};
     var displayScore = false;
     var time = { wtime: 300000, btime: 300000, winc: 2000, binc: 2000 };
@@ -138,7 +151,7 @@ function engineGame(options) {
             if(game.history().length >= 2 && !time.depth && !time.nodes) {
                 startClock();
             }
-        }
+        }         
     }
 
     engine.onmessage = function(event) {
@@ -181,10 +194,10 @@ function engineGame(options) {
             promotion: 'q' // NOTE: always promote to a pawn for example simplicity
         });
         // illegal move
-        if(move===null)return 'snapback';
+        if(move===null || $('#time1').text()=="0:00:00 <-"|| $('#time2').text()=="0:00:00 <-")return 'snapback';
         play_sound();
         prepareMove();
-
+        
     };
     function play_sound(){
         var turn = game.turn() == 'w' ? 'white' : 'black';
@@ -240,7 +253,6 @@ function engineGame(options) {
     }
 
     board = new ChessBoard('myBoard', cfg);
-
     return {
         reset: function() {
             game.reset();

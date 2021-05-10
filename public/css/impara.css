@@ -1,0 +1,48 @@
+.row{
+  background-color: rgb(15, 15, 15);
+  border-radius: 30px;
+  border: whitesmoke solid;
+}
+.column {
+    float: left;
+}
+.left {
+    text-align: center;
+    padding-top: 5%;
+    width: 25%;
+}
+.middle{
+    padding-top:2%;
+    padding-bottom:2%;
+    width:40%;
+}
+.right {
+    padding-top: 2%;
+    width: 25%;
+}
+h2{
+    color: red; 
+    display: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.dropdown{
+    color:#fff;
+    cursor:pointer;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: #fff solid;
+    background:transparent;
+}
+.dropdown:hover{
+  background: #d22938;
+}
+option{
+  background-color:rgb(0, 0, 0);
+}
+.storia{
+  width:100%; 
+  font-size: medium; 
+  padding:2%;
+}

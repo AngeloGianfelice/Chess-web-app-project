@@ -1,0 +1,121 @@
+{
+    "aperture":{
+        "difesa francese":{
+            "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+            "descrizione": "Giocata per la prima volta con successo nel match per corrispondenza Londra-Parigi del 1834, divenne negli anni successivi molto popolare più che altro come modo di impedire tutti quei tatticismi su f7 che disturbano il Nero nelle aperture aperte. Solo a partire dalla metà dell XX secolo la Francese è passata al terzo posto nelle preferenze del Nero su 1.e4. Molti campioni hanno avuto la francese come arma principale del loro repertorio,basti citare Botvinnik per quelli del passato, o Bareev,Yusupov,Dolmatov e Korchnoj per i contemporanei."
+            },
+        "difesa siciliana":{
+            "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+            "descrizione": "Nella difesa siciliana il Nero con con la spinta del pedone in c5 si oppone all'ideale occupazione del centro da parte dei pedoni bianchi in e4 e d4. Fino ai primi decenni dell XX secolo il Nero quasi sempre il nero preferiva controllare il centro con la classica spinta in e5. Tra i giocatori più importanti della Siciliana ricordiamo Garry Kasparov,per molti il piu forte giocatore di tutti i tempi, e Bobby Fischer."
+            },
+        "apertura Ruy Lopez":{
+            "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 3",
+            "descrizione": "La partita spagnola è spesso chiamata Ruy Lopez dal vescovo spagnolo che nel 1561 la indicò come la migliore continuazione del Bianco al terzo tratto. In un suo trattato 'dimostrò' che 3...Nge7, allora ritenuta forzata, era insoddisfaciente e suggerì di sostituire 2...Nc6 con 2...d6. Cosa che fece Philidor due secoli dopo! Naturalmente si scopri presto che la 'minaccia Bxc6 seguita da Nxe5 non era tale a causa di Qd4 che recupera il pedone con vantaggio. Questa scoperta ha fatto sì che il nero disponga di un'ampia scelta di continuazioni giocabili."
+            },
+        "difesa Caro-Kann":{
+            "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+            "descrizione": "Quando Nimzowitsch negli anni '20 del XX secolo sosteneva che la Caro-Kann confuta 1.e4 era volutamente provocatorio. Il suo scopo era quello di smuovere un po' le acque di una Teoria che rifiutava tutte le novità in nome del dogmatismo imperante. Quello che voleva dire è che su 1.e4 non è obbligatorio giocare 1.e5 e che vi sono altre strategie possibili oltre a quella basata sul semplice controllo dello spazio. La sua intuizione può dirsi giusta, visto che oggigiorno la Siciliana è di gran lunga la difesa più giocata dopo 1.e4."
+            },
+        "partita italiana":{
+            "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+            "descrizione": "Una delle aperture più antiche. Basti dire che la continuazione migliore per il Nero(4..Nf6) fu suggerita dal portoghese Damiano nel 1512! Il bianco si prefigge una rapida occupazione del centro con c3 e d4, col vantaggio di guadagnare un tempo attaccando l'alfiere in c5"
+            },
+        "difesa scandinava":{
+            "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+            "descrizione": "La spinta in d5 è la tipica spinta liberatrice di molte difese,basti pensare ad alcune varianti della Siciliana e della Spagnola. La difesa Scandinava 'libera' il gioco già dalla prima mossa ,ma le cose non sono così semplici..."
+            },
+        "difesa Pirc":{
+            "fen": "rnbqkbnr/ppp1pppp/3p4/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+            "descrizione": "La difesa Pirc è caratterizzata dalla apertura del fianchetto di re. Prima però il Nero gioca 1...d6 per impedire e5 e poi 2...Nf6 provocando 3.Nc3 e impedendo al Bianco di giocare c4 rientrando in una Est-Indiana. Che poi la Pirc sia meglio della Est-indiana è tutto da dimostrare: come sempre è solo una questione di gusti. Nella Pirc in Nero concede il centro sperando di minarlo in seguito: si tratta quindi di una difesa ambiziosa e piuttosto impegnativa. Il Bianco da parte sua può reagire aggressivamente o scegliere un approccio più manovrato."
+            },
+        "difesa Alekhine":{
+            "fen": "rnbqkb1r/pppppppp/5n2/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+            "descrizione": "una delle difese più rivoluzionarie nella storia della Teoria. Adottata per la prima volta da Alekhine nel 1921 rivela un'idea sorprendente e almeno per quel tempo in odore di eresia: provocare l'avanzamento dei pedoni bianchi nel tentativo di dimostrare che il centro avversario è una debolezza e non una forza."
+            },
+        "gambetto di re":{
+            "fen": "rnbqkbnr/pppp1ppp/8/4p3/4PP2/8/PPPP2PP/RNBQKBNR w - - 0 1",
+            "descrizione": "Il gambetto di re è una delle aperture che ha fatto la storia degli scacchi. Giocatissimo nell'800 e quasi scomparso all'inizio del XX secolo, ha avuto in seguito una parziale rivalutazione. Oggi infatti questo gambetto non è più visto solo come un mezzo violento di attacare la casa f7 tramite l'uso della colonna f e del solito Bc4, ma come un modo di conquistare il centro non rifuggendo eventuali semplificazioni e finali precoci."
+            },
+        "partita viennese":{
+            "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 0 2",
+            "descrizione": "Il Bianco controlla la casa d5 e lascia libero il pedone della colonna f di avanzare, ed infatti la Partita Viennese è un tentativo di giocare un gambetto di re migliorato."
+            },
+        "gambetto di Donna":{
+            "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+            "descrizione": "Il gambetto di donna è una delle aperture più antiche che si conoscano: si sa che lo scacchista spagnolo Lucena ne parlò in un suo scritto del 1497. Durante il primo periodo degli scacchi moderni, le aperture di donna non erano di moda, e il gambetto non divenne popolare finché non fu giocato nel 1873 a un torneo a Vienna. Il picco di popolarità si ebbe negli anni venti e trenta del XX secolo. Il gambetto di donna è ancora giocato frequentemente anche da molti grandi maestri. Con 2.c4, il Bianco minaccia di scambiare un pedone d'ala (il pedone c) con un pedone centrale (il pedone d nero) e di dominare il centro con e2-e4."
+            },
+        "difesa slava":{
+            "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+            "descrizione": "Il nero sostiene il pedone in d5 con quello in c6;in tal modo lascia libera la diagonale bianca per l'alfiere campo chiaro. Il primo esempio di Slava è gia presente in una partita di Steinitz del 1863,ma solo negli anni '30 del XX secolo è diventata popolare dopo una famosa vittoria del 1926 dello slavo Vidmar contro Alekhine."
+            },
+        "difesa Est-indiana":{
+            "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+            "descrizione": "L'Est-Indiana è una difesa ambiziosa: il Nero preferisce il fianchetto con 2...g6 e lascia che il Bianco si impossessi del centro. Si tratta di un'idea moderna ma già negli anni '20 del XX secolo qualche giocatore la adottava saltuariamente. Ma solo alla fine degli anni '40 cominciò il boom di questa apertura grazie all'apporto decisivo dei giocatori sovietici: Bronstein, Boleslavsky e Geller."
+            },
+        "difesa Nimzo-indiana":{
+            "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+            "descrizione": "Dopo 3.Nc3 con 3...Bb4 il Nero lotta per il controllo della casa e4 senza occupare il centro con 3...d5. In questo modo introduce una delle aperture più affascinanti in quanto rispecchia come poche l'eterna lotta tra il cavallo e l'alfiere, tra elementi dinamici e statici di una posizione. Fu giocata per la prima volta da Nimzowitsch nel 1914."
+            },
+        "difesa Ovest-indiana":{
+            "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4",
+            "descrizione": "L'Ovest-Indiana(o Indiana di Donna per i paesi anglofoni) è così chiamata perchè l'alfiere viene sviluppato in fianchetto ad Ovest in contrapposizione all'Est-Indiana. Giocata per la prima volta da Nimzowitsch nel 1914 si sviluppò negli anni '20 con la sua adozione da parte di Capablanca,Euwe,Alekhine e Bogoljubov. Rimasta sempre molto popolare ha visto il suo campione nel russo Anatoly Karpov a partire dagli anni '70."
+            },
+        "difesa Grunfeld":{
+            "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+            "descrizione": "La difesa Grunfeld è caratterizzata della mossa 3...d5: la spinta in e4 viene per il momento impedita,ma sapendo bene che essa è solo ritardata di una mossa. Ma è proprio questa l'idea della difesa: cedere il centro per poi attaccarlo. Questa idea apperve nel 1922 nelle partite dell'austriaco Ernst Grunfeld: inizialmente vista come una bizzarria questa difesa fu rivalutata in seguito da giocatori come Alekhine,Flohr e Botvinnik, per le sue potenzialità dinamiche e la corretteza strategica."
+            },
+        "difesa Olandese":{
+            "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+            "descrizione": "Così chiamata dela giocatore e teorico olandese del XVIII secolo Elias Stein che in un suo popolare trattato dell' epoca ne sostenna la validità. Lo scopo è naturalmente quello di controllare la casa e4,ponendo allo stesso tempo i presupposti per un'iniziativa sul re bianco che è rara nei sistemi classici."
+            },
+        "gambetto Benko":{
+            "fen": "rnbqkb1r/p2ppppp/5n2/1ppP4/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 0 4",
+            "descrizione": "Una volta chiamato gambetto Volga perchè analizzato in Russia alla fine delgi anni '40, oggi porta il nome dell'americano di origine ungherese Pal Benko, che lo rese popolare a partire dalla fine degli anni '60. Il Gambetto Benko rappresenta una delle tappe più importanti nell'evoluzione del pensiero scacchistico ed una delle forme più pure di sacrificio posizionale: il nero cede infatti un pedone per attivare i pezzi sull'ala di donna per una duratura pressione ad Ovest."
+            },
+        "sistema di Londra":{
+            "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R b KQkq - 3 3",
+            "descrizione": "Nel torneo di Londra  del 1922 fu più volte giocata la sequenza: 1.d4 2.Nf3 e 3.bf4 contro diversi impianti neri, da cui il nome del sistema. Si tratta di un solido impianto 'anti-Teoria' ma il nero farà bene a non sottovalutarne la pericolosità."
+            },
+        "difesa Benoni Moderna":{
+            "fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 0 4",
+            "descrizione": "Pochi sanno che il nome di questa apertura contiene una citazione biblica: Benoni era figlio di Giacobbe e di rachele e la madre morì nel darlo alla luce e per questo fu chiamato Benoni,che in ebraico significa 'figlio della mia pena'. Non un nome incoraggiante per un'apertura,ma appropriato alle sue prime uscite che specie nella versione 'antica' non furono esaltanti. Solo in seguito, ci si rese conto delle potenzialità dinamiche della versione moderna."
+        },
+        "apertura catalana":{
+            "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+            "descrizione": "La Catalana è così chiamata perchè fu giocata la prima volta da Tartakower a Barcellona nel 1929. Si tratta di una specie di gambetto di donna rifiutato in cui il bianco fianchetta il suo alfiere di re invece di svilupparlo in d3 o e2. Questo comporta il vantaggio di una maggiore pressione posizionale lungo l'importante diagonale bianca(non a caso si parla di alfiere catalano per sottolinearne l'efficacia)."
+            },
+        "apertura Reti":{
+            "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+            "descrizione": "Il bianco sviluppa un pezzo verso il centro eseguendo una mossa utile e si riserva di spingere pedoni in seguito, a seconda di quale impianto sceglierà il nero. Gia giocata nel XIX secolo da Staunton, Zukentort e Steinitz,solo nel XX divenne una mossa 'normale'. Fu Richard Reti poi, che negli anni '20, introducendo dipo 1...d5 la mossa 2.c4,diede a questa apertura una sua specificità e un'impronta moderna."
+            },
+        "apertura inglese":{
+            "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+            "descrizione": "Così chiamata perchè introdotta nella pratica dall'inglese Howard Staunton nel 1843 nel suo match con Saint-Amant. Rimase un'apertura marginale fino agli anni '20 del XX secolo, quando Tartakower arrivò ad affermare che 1.c4 era la mossa più forte in quanto controllava la strategica casa d5. Naturalmente si trattò di un'esagerazione tesa a smuovere le acque di una Teoria stagnante. Se i giocatori del tempo continuarono a preferire la Partita di Re,l'apertura inglese venne però sempre più accettata come un tentativo valido di ottenere un vantaggio col bianco, ed oggi essa è molto popolare."
+            },
+        "apertura Bird":{
+            "fen": "rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq - 0 1",
+            "descrizione": "Già adottata in un paio di occasioni da Labourdonnais e da Saint Amant nella prima metà dell'800, 1.f4 porta il nome del giocatore inglese Henry Bird che la giocò con buoni risultati nella seconda metà dello stesso secolo. Il pedone in f4 controlla l'importante casa e5, però allo stesso tempo non favorisce lo sviluppo dei pezzi e può limitare il naturale sviluppo dell'alfiere campo scuro in f4 o g5. Il nero, come sempre quando il bianco sceglie aperture non particolarmene energetiche, ha molte risposte disponibili."
+            },
+        "attacco Est-indiano":{
+            "fen": "rnbqkbnr/ppp1pppp/8/3p4/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+            "descrizione": "Non può essere considerata un'apertura vera e propria, in quanto si può presentare attraverso diversi ordini di mosse, prescindendo in linea di massima dalle risposte del Nero. In pratica il bianco vuole raggiungere una posizione simile a quella delle difesa est-indiana, ma a colori invertiti e disponendo di un tempo in più. La strategia del bianco consiste nel cercare di avanzare il pedone da e4 ad e5; il nero a sua volta tenta di avanzare i propri pedoni sul lato di Donna. Numerosi e brillanti esempi di questo sistema si possono rintracciare nelle partite di Smyslov, Fischer e Petrosyan."
+            },
+        "sistema Benko":{
+            "fen": "rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq - 0 1",
+            "descrizione": "Dalla fine degli anni '40 del XX secolo fin quasi ai giorni nostri, Pal Benko ha adottato questa apertura con grande costanza e ottimi risultati(tra le sue vittime figurano nientemeno che Fischer e Tal!).Questa immediata apertura del fianchetto è perfettamente logica. Il suo spirito è moderno: controllo del centro piuttosto che sua occcupazione,specie laddove si concede al nero di prenderne possesso."
+            },
+        "apertura Larsen":{
+            "fen": "rnbqkbnr/pppppppp/8/8/8/1P6/P1PPPPPP/RNBQKBNR b KQkq - 0 1",
+            "descrizione": "Giocata de Nimzowitsch in tre occasione negli anni '20 del 900, questa apertura porta il nome di Bent Larsen. Il GM danese infatti, negli anni '60 e '70, la adottò ai massimi livelli con assiduità e buoni risultati. Con 1.b3 il bianco la butta sul posizionale e rinuncia, almeno in parte, al vantaggio della prima mossa. Un punto a favore di questa apertura  è che le posizioni risultanti, essendo di natura strategica, si possono giocare senza una specifica preparazione."
+            },
+        "apertura Sokolsky":{
+            "fen": "rnbqkbnr/pppppppp/8/8/1P6/8/P1PPPPPP/RNBQKBNR b KQkq - 0 1",
+            "descrizione": "Presente sporadicamente in alcune partite del XIX secolo, è anche conosciuta con il nome di Orangutan,epiteto scherzosamente affibbiatogli da Tartakower,ma in genere si preferisce il nome più serio di apertura Sokolsky, dal giocatore sovietico che negli anni '60 scrisse una monografia sull'argomento. Non è mai stata comunque molto popolare ed al giorno d'oggi è giocata circa una volta ogni 700 partite. Lo scopo è quello di preparare il fianchetto allargato per l'Ac1 e allo stesso tempo conquistare spazio ad Ovest."
+            },
+        "attacco Grob":{
+            "fen": "rnbqkbnr/pppppppp/8/8/6P1/8/PPPPPP1P/RNBQKBNR b KQkq - 0 1",
+            "descrizione": "Questa apertura prende il nome dal Maestro svizzero Henry Grob che negli anni '40 del XX secolo scrisse una monografia sull'argomento e ne sperimentò lo sviluppo in centinaia di partite fino agli anni '70. L'idea di g4 è quella di attaccare ad Est: il problema è che per attaccare sulle ali bisogna avere un buon controllo del centro, ed è proprio ciò che il bianco trascura con questa spinta pretenziosa."
+            }
+    }
+}
+        

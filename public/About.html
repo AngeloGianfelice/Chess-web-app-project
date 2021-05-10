@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <Title>FrogChess.com</Title>
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <link rel=stylesheet href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel=stylesheet href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" class="logo">
+            <nav>
+                <ul class="nav-area">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Notizie.html">Notizie</a></li>
+                    <li><a href="Impara.html">Impara</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <button class="btn-area" onclick="openLoginForm()">Login</button>
+            <div class="form-popup" id="myLoginForm">
+                <form action="post" class="form-container">
+                  <h1 style="color:black">Login</h1>
+                  <label for="email" style="color:black"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw" style="color:black"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                </form>
+            </div>
+            <script>
+                function openLoginForm(){
+                    document.getElementById("myLoginForm").style.display = "block";
+                }
+                function openRegForm(){
+                    document.getElementById("myRegForm").style.display = "block";
+                }
+                function closeLoginForm() {
+                    document.getElementById("myLoginForm").style.display = "none";
+                }
+                function closeRegForm() {
+                    document.getElementById("myRegForm").style.display = "none";
+                }
+            </script>
+        </header>
+        <section>
+            <h1>Il Progetto</h1>
+            <p class="paragraph">
+                Questo progetto è stato realizzato da Angelo Gianfelice e
+                Luigi Morsello per il corso di  Linguaggi e Tecnologie Web anno 2020/21.<br>
+            </p>
+            <h2>Tecnologie</h2>
+            <p class="paragraph">
+                Abbiamo sviluppato la nostra idea utilizzando HTML,CSS,JAVASCRIPT,NODEJS,BOOTSTRAP,JQUERY e
+                servendoci della libreria <a href="https://chessboardjs.com/">chessboard.js</a>
+            </p>
+        </section>
+        <footer>For info please contact us at : gianfelice.1851260@studenti.uniroma1.it  or  morsello.1851339@studenti.uniroma1.it</footer>
+    </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <Title>FrogChess.com</Title>
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <script src="jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="chessboardjs/dist/chessboard-1.0.0.min.css">
+    <script src="chessboardjs/dist/chessboard-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/impara.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" class="logo">
+            <nav>
+                <ul class="nav-area">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Notizie.html">Notizie</a></li>
+                    <li><a href="#">Impara</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="btn-area" onclick="openLoginForm()">Login</button>
+            <div class="form-popup" id="myLoginForm">
+                <form action="post" class="form-container">
+                  <h1 style="color:black">Login</h1>
+                  <label for="email" style="color:black"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw" style="color:black"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                </form>
+            </div>
+            <script>
+                function openLoginForm(){
+                    document.getElementById("myLoginForm").style.display = "block";
+                }
+                function openRegForm(){
+                    document.getElementById("myRegForm").style.display = "block";
+                }
+                function closeLoginForm() {
+                    document.getElementById("myLoginForm").style.display = "none";
+                }
+                function closeRegForm() {
+                    document.getElementById("myRegForm").style.display = "none";
+                }
+            </script>
+        </header>
+        <section style="padding-top: 3%; padding-bottom: 8%;">
+            <div class="row" style="margin-bottom: 50px;">
+                <div class="column left storia">
+                    <h1 style="color: red; font-family:'Times New Roman', Times, serif ; font: size 30px;">La Storia degli Scacchi</h1>
+                    <text style="font-family:'Times New Roman', Times, serif">
+                        <iframe width="550" height="350" src="https://www.youtube.com/embed/YeB-1F-UKO0" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+                        Gli scacchi hanno circa 1500 anni e, tuttora, sono un gioco diffusissimo, anche grazie alla possibilità di disputare appassionanti partite online.
+                        La prima versione del gioco risalirebbe al VI secolo e sarebbe nata in India. Simulazione “pacifica” di uno scontro tra due eserciti, si diffuse con il nome di chaturanga. 
+                        Non si sa chi l’abbia inventato, ma circola la leggenda di un uomo, che presentò il gioco a un principe indiano. 
+                        L’aneddoto divenne così celebre da essere rievocato anche da Dante nella Divina Commedia.<br>
+                        <img src="img/india.jpg" width="200px" height="100px"> Krishna and Radha giocano a chaturanga <br>
+                        Leggende a parte, sappiamo che, tramite i mercanti, il gioco si diffuse nel VII secolo in Persia. 
+                        Lo stesso nome “scacchi” ha origini persiane, derivando dalla parola shah, “re” (“scacco matto” viene invece da shah mat, “re sconfitto”).<br>
+                        <img src="img/persia.jpg" width="200px" height="100px"> manoscritto persiano del XIV secolo<br> 
+                        A rimanere affascinati dal gioco furono poi gli arabi che, dal X secolo, lo introdussero nell’area mediterranea, a partire dall’Italia e dalla Spagna.
+                        In Europa gli scacchi ebbero subito grande successo: divennero oggetto di testi critici e i migliori artigiani crearono pezzi sempre più elaborati. 
+                        Le regole del gioco furono intanto modificate, assieme ai pezzi stessi (l’alfiere era prima un elefante), divenendo alla fine del XV secolo molto simili a quelli attuali.<br>
+                        <img src="img/europe.jpg" width="200px" height="100px"> Templari disputano una partita(1283)<br>  
+                        Apparvero poi sulla scena i primi giocatori famosi e, nel XIX secolo, iniziarono i tornei internazionali (il primo campionato del mondo è del 1886). 
+                        Infine, nel 1924, nacque la Fide, la federazione internazionale che organizza ancora oggi campionati mondiali e Olimpiadi degli scacchi.
+                        Negli ultimi decenni anche i computer si sono cimentati con questo gioco, battendo persino i campioni del mondo. 
+                        Uno dei più precoci è stato il norvegese Magnus Carlsen: nato nel 1990, è stato nominato dalla Fide “grande maestro internazionale” a soli 13 anni!<br>
+                        <img src="img/carlsen.jpg" width="450px" height="312px"> Magnus Carlsen(2018)</text>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 50px;">
+                <div class="column left storia">
+                <h1 style="color: red; font-family:'Times New Roman', Times, serif ; font: size 30px;">Le Aperture</h1>
+                <text>L'apertura di una partita di scacchi(ossia la sequenza delle prime mosse) è una battaglia tra due eserciti equalmente dotati. 
+                    Non vi è nessun metodo che assicurerà ad un giocatore un vantaggio decisivo indipendentemente da come risponde l'avversario. Se così fosse, nessuno si divertirebbe. 
+                    La vittoria in una partita si ottiene sfruttando gli errori e le mosse non accurate altrui. 
+                    Alla domanda "Cos'è una mossa inaccurata?" si può rispondere solo allenandosi e imparando dai propri errori.
+                    Inizia il Bianco. Perché la maggior parte dei giocatori professionisti inizia muovendo un pedone centrale o il cavallo dal lato del re? Semplicemente perché il risultato di milioni di partite di scacchi ha dato a queste mosse una migliore reputazione delle altre. 
+                    Quindi si può dire che il Bianco 'conosce il segreto' - ma, dopo un certo numero di partite con le quali si è iniziato con la stessa mossa d'apertura, il Nero inizia a intuire che certe risposte sono migliori di altre. 
+                    Quindi il Bianco inizia a sapere cosa aspettarsi dal Nero...
+                    Mandando avanti questo processo di qualche secolo e tenendo a mente che la maggior parte degli schemi accetta solo poche mosse possibili che danno gli stessi vantaggi (o altre che non sono così vantaggiose ma possono semplicemente distrarre l'avversario), si sono sviluppate talmente tante aperture da riempire interi libri. 
+                    E' nata cosi la Teoria delle Aperture, delle quali parleremo qui sotto.</text>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 50px;">
+                <div class="column left">
+                    <h1>1.e4</h1>
+                    <select class="dropdown" id="#1.e4" name="1.e4">
+                        <option value="difesa francese" selected="selected">difesa francese</option>
+                        <option value="difesa siciliana">difesa siciliana</option>
+                        <option value="apertura Ruy Lopez">apertura Ruy Lopez</option>
+                        <option value="difesa Caro-Kann">difesa Caro-Kann</option>
+                        <option value="partita italiana">partita italiana</option>
+                        <option value="difesa scandinava">difesa scandinava</option>
+                        <option value="difesa Pirc">difesa Pirc</option>
+                        <option value="difesa Alekhine">difesa Alekhine</option>
+                        <option value="gambetto di re">gambetto di re</option>
+                        <option value="partita viennese">partita viennese</option>
+                    </select>
+                    <br><br>
+                    <button class="btn-area" onclick="display_opening('#1.e4')">Invia</button>
+                </div>
+                <div class="column middle">
+                    <div id="myBoard1" style="width: 500px"></div>
+                </div>
+                <div class="column right">
+                    <h2 class="h21">NOME:</h2>
+                    <text id="nome1"></text>
+                    <br>
+                    <h2 class="h21">DESCRIZIONE:</h2>
+                    <text id="descrizione1" readonly ></text>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 50px";>
+                <div class="column left">
+                    <h1>1.d4</h1>
+                    <select class="dropdown" id="#1.d4" name="1.d4">
+                        <option value="gambetto di Donna" selected="selected">gambetto di Donna</option>
+                        <option value="difesa slava">difesa slava</option>
+                        <option value="difesa Est-indiana">difesa Est-indiana</option>
+                        <option value="difesa Nimzo-indiana">difesa Nimzo-indiana</option>
+                        <option value="difesa Ovest-indiana">difesa Ovest-indiana</option>
+                        <option value="difesa Grunfeld">difesa Grunfeld</option>
+                        <option value="difesa Olandese">difesa Olandese</option>
+                        <option value="gambetto Benko">gambetto Benko</option>
+                        <option value="sistema di Londra">sistema di Londra</option>
+                        <option value="difesa Benoni Moderna">difesa Benoni Moderna</option>
+                    </select>
+                    <br><br>
+                    <button class="btn-area" onclick="display_opening('#1.d4')">Invia</button>
+                </div>
+                <div class="column middle">
+                    <div id="myBoard2" style="width: 500px"></div>
+                </div>
+                <div class="column right">
+                    <h2 class="h22">NOME:</h2>
+                    <text id="nome2"></text>
+                    <br>
+                    <h2 class="h22">DESCRIZIONE:</h2>
+                    <text id="descrizione2" readonly ></text>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column left">
+                    <h1>Altre</h1>
+                    <select class="dropdown" id="Altre" name="Altre">
+                        <option value="apertura catalana" selected="selected">apertura catalana</option>
+                        <option value="apertura Reti">apertura Reti</option>
+                        <option value="apertura inglese">apertura inglese</option>
+                        <option value="apertura Bird">apertura Bird</option>
+                        <option value="attacco Est-indiano">attacco Est-indiano</option>
+                        <option value="sistema Benko">sistema benko</option>
+                        <option value="apertura Larsen">apertura Larsen</option>
+                        <option value="apertura Sokolsky">apertura Sokolsky</option>
+                        <option value="attacco Grob">attacco Grob</option>
+                    </select>
+                    <br><br>
+                    <button class="btn-area" onclick="display_opening('Altre')">Invia</button>
+                </div>
+                <div class="column middle">
+                    <div id="myBoard3" style="width: 500px"></div>
+                </div>
+                <div class="column right">
+                    <h2 class="h23">NOME:</h2>
+                    <text id="nome3"></text>
+                    <br>
+                    <h2 class="h23">DESCRIZIONE:</h2>
+                    <text id="descrizione3" readonly ></text>
+                </div>
+            </div>
+        </section>
+        <script src="js/openings.js"></script>
+        <footer>For info please contact us at : gianfelice.1851260@studenti.uniroma1.it  or  morsello.1851339@studenti.uniroma1.it</footer>
+    </body>
+</html>
