@@ -25,7 +25,7 @@
         <a href="/" class="btn-area" >BACK</a>
     </header>
     <section style="padding-top: 3%; padding-bottom: 3%;">
-        <h1>PLAY AGAINST STOCKFISH 11(<span id="isRanked">UNRANKED</span>)</h1>
+        <h1>PLAY AGAINST STOCKFISH 11(<span id="isRanked">RANKED</span>), <span id="username"><%=username%></span> </h1>
         <body>
           <div class="row">
             <div class="col-sm-7 col-md-6">
@@ -73,18 +73,20 @@
                 <div class="form-group">
                   <label for="showScore" class="control-label col-xs-4 col-sm-6 col-md-4">Show score</label>
                   <div class="col-xs-4 col-sm-6 col-md-4">
-                    <input type="checkbox" class="form-control" id="showScore" checked></input>
+                    <input type="checkbox" class="form-control" id="showScore" checked required></input>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4"></label>
                   <div class="col-xs-4 col-sm-6 col-md-4">
-                    <button type="button" class="btn-area" onclick="newGame()">New Game</button>
+                    <button type="button" class="btn btn-primary" onclick="newGame()">New Game</button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
+          <!-- axios -->
+          <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
           <script src="js/enginegame.js"></script>
         </section>
         <footer>For info please contact us at : gianfelice.1851260@studenti.uniroma1.it  or  morsello.1851339@studenti.uniroma1.it</footer>

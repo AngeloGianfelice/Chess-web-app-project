@@ -131,5 +131,8 @@ footer{
 .reglink:hover{
     color:#d22938;
 }
+.erroreReg{
+    color:red;
+}
 
 

@@ -1,4 +1,7 @@
 var game = engineGame({book: '../book.bin'});
+function inviaDati(risultato,livello,username){
+    axios.post(`/updateStats?username=${username}`,{ risultato: risultato, livello:livello});
+}
 newGame();
 function newGame() {
     var baseTime = parseFloat($('#timeBase').val()) * 60;
@@ -151,8 +154,28 @@ function engineGame(options) {
             if(game.history().length >= 2 && !time.depth && !time.nodes) {
                 startClock();
             }
-        }         
-    }
+        } else {
+            let risultato;
+            let livello = $("#skillLevel").val();
+            //TODO
+            const isRanked = $("#isRanked").text(); 
+            const username = $("#username").text();
+            //il turno attuale è quello dell'avversario non del vincitore
+            console.log(isRanked);
+            if(isRanked ==="RANKED"){
+                if(!game.in_draw()){
+                    if (playerColor === "white" && game.turn() === "w") risultato = "sconfitte";
+                    if (playerColor === "white" && game.turn() === "b") risultato = "vittorie";
+                    if (playerColor === "black" && game.turn() === "w") risultato = "vittorie";
+                    if (playerColor === "black" && game.turn() === "b") risultato = "sconfitte";
+                } else {
+                    risultato = "pareggi";
+                }
+                console.log("inviando dati:", username, "risultato:", risultato);
+                inviaDati(risultato,livello,username);
+                }
+            }        
+        }
 
     engine.onmessage = function(event) {
         var line = event.data;

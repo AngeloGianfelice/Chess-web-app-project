@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>FrogChess.com</Title>
+    <link rel="shortcut icon" type="image/ico" href="../public/img/favicon.ico">
+    <link rel=stylesheet href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel=stylesheet href="/css/index.css">
+    <link rel=stylesheet href="/css/logged.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo.jpg" class="logo">
+        <nav>
+            <ul class="nav-area">
+                <li><a href="/">Home</a></li>
+                <li><a href="../public/Notizie.html">Notizie</a></li>
+                <li><a href="../public/Impara.html">Impara</a></li>
+                <li><a href="../public/About.html">About</a></li>
+            </ul>
+        </nav>
+        <a href="/" class="btn-area">Logout</a>
+    </header>
+    <section class="section-div" style="margin-bottom: 100px;">
+        <h1>
+            Welcome back <%= username %> !!
+        </h1>
+        <br>
+        <div class="button-wrapper">
+            <a href="/game?username=<%=username%>" class="btn-area">Play vs stockfish(ranked)</a>
+            <a href="../enginegame.html" class="btn-area">Play vs stockfish(unranked)</a>
+            <a href="../pvpgame.html" class="btn-area">Play Unranked match</a>
+        </div>
+        <br>
+        <table>
+            <tr>
+                <th>level</th>
+                <th>Win</th>
+                <th>Draw</th>
+                <th>lose</th>
+                <th>win%</th>
+            </tr>
+            <% for( livello in statistiche ) { %>
+                <tr>
+                    <td>
+                        <%= livello %>
+                    </td>
+                    <td>
+                        <%= statistiche[livello].vittorie %>
+                    </td>
+                    <td>
+                        <%= statistiche[livello].pareggi %>
+                    </td>
+                    <td>
+                        <%= statistiche[livello].sconfitte %>
+                    </td>
+                    <td>
+                       <%= winsPercentage[livello] %> 
+                    </td>
+                </tr>
+                <% } %>
+        </table>
+    </section>
+    <footer>For info please contact us at : gianfelice.1851260@studenti.uniroma1.it or
+        morsello.1851339@studenti.uniroma1.it</footer>
+</body>
+
+</html>
