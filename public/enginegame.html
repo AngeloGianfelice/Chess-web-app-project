@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CHESS WEBSITE</title>
+        <title>FrogChess.com</title>
         <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
         <script src="jquery/dist/jquery.min.js"></script>
         <script src="chess.js/chess.js"></script>
@@ -22,10 +22,10 @@
                 <li><a href="About.html">About</a></li>
             </ul>
         </nav>
-        <a href="/" class="btn-area" >BACK</a>
+        <a href="/" class="btn-area" >INDIETRO</a>
     </header>
     <section style="padding-top: 3%; padding-bottom: 3%;">
-        <h1>PLAY AGAINST STOCKFISH 11(<span id="isRanked">UNRANKED</span>)</h1>
+        <h1>GIOCA CONTRO STOCKFISH 11(<span id="isRanked">non classificata</span>)</h1>
         <body>
           <div class="row">
             <div class="col-sm-7 col-md-6">
@@ -36,42 +36,42 @@
               <div id="engineStatus">...</div>
             </div>
             <div class="col-sm-5 col-md-6">
-              <h3>Moves:</h3>
+              <h3>Mosse:</h3>
               <div id="pgn"></div>
               <hr>
               <form class="form-horizontal">
                 <div class="form-group">
-                  <label for="timeBase" class="control-label col-xs-4 col-sm-6 col-md-4">Base time (min)</label>
+                  <label for="timeBase" class="control-label col-xs-4 col-sm-6 col-md-4">Tempo base (min)</label>
                   <div class="col-xs-4 col-sm-6 col-md-4">
                     <input type="number" class="form-control" id="timeBase" value="5" min="1" 
                     oninput="validity.valid || (value=''); "></input>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="timeInc" class="control-label col-xs-4 col-sm-6 col-md-4">Increment (sec)</label>
+                  <label for="timeInc" class="control-label col-xs-4 col-sm-6 col-md-4">Incremento (sec)</label>
                   <div class="col-xs-4 col-sm-6 col-md-4">
                     <input type="number" class="form-control" id="timeInc" value="2" min="0" 
                     oninput="validity.valid || (value='');" ></input>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="skillLevel" class="control-label col-xs-4 col-sm-6 col-md-4">Skill Level (0-20)</label>
+                  <label for="skillLevel" class="control-label col-xs-4 col-sm-6 col-md-4">livello di difficoltà(0-20)</label>
                   <div class="col-xs-4 col-sm-6 col-md-4">
                     <input type="number" class="form-control" id="skillLevel" value="20" min="0" max="20" 
                     oninput="validity.valid || (value='');" ></input>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4">I play</label>
+                  <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4">Gioco con:</label>
                   <div class="col-xs-4 col-sm-6 col-md-4">
                     <div class="btn-group" data-toggle="buttons">
-                      <label class="btn btn-primary active" id="color-white"><input type="radio" name="color" checked>White</label>
-                      <label class="btn btn-primary" id="color-black"><input type="radio" name="color">Black</label>
+                      <label class="btn btn-primary active" id="color-white"><input type="radio" name="color" checked>Bianco</label>
+                      <label class="btn btn-primary" id="color-black"><input type="radio" name="color">Nero</label>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="showScore" class="control-label col-xs-4 col-sm-6 col-md-4">Show score</label>
+                  <label for="showScore" class="control-label col-xs-4 col-sm-6 col-md-4">Mostra valutazione</label>
                   <div class="col-xs-4 col-sm-6 col-md-4">
                     <input type="checkbox" class="form-control" id="showScore" checked></input>
                   </div>
@@ -79,7 +79,7 @@
                 <div class="form-group">
                   <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4"></label>
                   <div class="col-xs-4 col-sm-6 col-md-4">
-                    <button type="button" class="btn-area" onclick="newGame()">New Game</button>
+                    <button type="button" class="btn-area" onclick="newGame()">Nuova partita</button>
                   </div>
                 </div>
               </form>
@@ -87,6 +87,7 @@
           </div>
           <script src="js/enginegame.js"></script>
         </section>
-        <footer>For info please contact us at : gianfelice.1851260@studenti.uniroma1.it  or  morsello.1851339@studenti.uniroma1.it</footer>
+        <footer>Per informazioni ci puoi contattare agli indirizzi: gianfelice.1851260@studenti.uniroma1.it o
+          morsello.1851339@studenti.uniroma1.it</footer>
     </body>
 </html>

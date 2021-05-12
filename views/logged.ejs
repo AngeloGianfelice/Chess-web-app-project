@@ -24,22 +24,22 @@
     </header>
     <section class="section-div" style="margin-bottom: 100px;">
         <h1>
-            Welcome back <%= username %> !!
+            Bentornato <%= username %> !!
         </h1>
         <br>
         <div class="button-wrapper">
-            <a href="/game?username=<%=username%>" class="btn-area">Play vs stockfish(ranked)</a>
-            <a href="../enginegame.html" class="btn-area">Play vs stockfish(unranked)</a>
-            <a href="../pvpgame.html" class="btn-area">Play Unranked match</a>
+            <a href="/game?username=<%=username%>" class="btn-area">Gioca contro stockfish(classificata)</a>
+            <a href="../enginegame.html" class="btn-area">Gioca contro stockfish(non classificata)</a>
+            <a href="../pvpgame.html" class="btn-area">Gioca contro un amico(non classificata)</a>
         </div>
         <br>
         <table>
             <tr>
-                <th>level</th>
-                <th>Win</th>
-                <th>Draw</th>
-                <th>lose</th>
-                <th>win%</th>
+                <th>livelo</th>
+                <th>Vittorie</th>
+                <th>Pareggi</th>
+                <th>Sconfitte</th>
+                <th>%vittorie</th>
             </tr>
             <% for( livello in statistiche ) { %>
                 <tr>
@@ -62,7 +62,7 @@
                 <% } %>
         </table>
     </section>
-    <footer>For info please contact us at : gianfelice.1851260@studenti.uniroma1.it or
+    <footer>Per informazioni ci puoi contattare gli indirizzi: gianfelice.1851260@studenti.uniroma1.it o
         morsello.1851339@studenti.uniroma1.it</footer>
 </body>
 
