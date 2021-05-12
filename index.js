@@ -15,7 +15,6 @@ const saltRounds = 12;
 
 //database packages
 const mongoose = require("mongoose");
-const { type } = require('jquery');
 mongoose.connect("mongodb+srv://lewis:cjb07@cluster0.ysajr.mongodb.net/databaseUtenti", { useUnifiedTopology: true, useNewUrlParser: true });
 const schemaUtente = {
     username: String,
@@ -49,7 +48,7 @@ app.post('/', (req, res) => {
 app.post("/accesso", async (req, res) => {
     //contrlla di che tipo di richiesta si tratta attraverso parametro di query
     const { typ } = req.query;
-    const { username, password } = req.body;
+    const { username } = req.body;
     console.log("tipo richiesta:", typ);
     let risultato;
     if (typ === "registrazione") {
@@ -62,7 +61,7 @@ app.post("/accesso", async (req, res) => {
     //se i dati sono stati inseriti correttamente (registrazione o login)
     if (risultato === true) {
         //calcolo della percentuale delle vittorie di un'utente se non ci sono stati errori
-        const { datiPartite } = await utente.findOne({ username: username });
+        const { datiPartite, password } = await utente.findOne({ username: username });
         const winsPercentage = calcolaWinPercentage(datiPartite);
         return res.render("logged.ejs", { username: username, password: password, statistiche: datiPartite, winsPercentage: winsPercentage });
     } else {
@@ -78,7 +77,7 @@ async function checkAndRegister(req, res) {
      *  effettua la registrazione con l'username indicato
      */
     const { password, username } = req.body;
-    console.log("pws:",password,"username:",username);
+    console.log("pws:", password, "username:", username);
     if (!password || !username) return "erroreReg";
     //controllo se esiste gia:
     const query = await utente.findOne({ username: username });
@@ -164,7 +163,6 @@ async function checkLogin(req, res) {
 app.get("/game", async (req, res) => {
     const { username, password } = req.query;
     const query = await utente.findOne({ username: username, password: password });
-    console.log(query);
     if (!query) return res.send("sei un limit tester, mi piace il tuo carattere");
     res.render("game.ejs", { username: username })
 });
