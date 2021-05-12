@@ -3,7 +3,7 @@
 
 <head>
     <Title>FrogChess.com</Title>
-    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico">
     <link rel=stylesheet href="bootstrap/dist/css/bootstrap.min.css">
     <link rel=stylesheet href="css/index.css">
 </head>
@@ -30,7 +30,7 @@
 
         <div class="form-popup" id="myLoginForm">
 
-            <form action="/login" method="POST" class="form-container">
+            <form action="/accesso?typ=login" method="POST" class="form-container">
 
                 <h1 style="color:black">Login</h1>
 
@@ -39,7 +39,7 @@
 
                 <label for="password" style="color:black"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" required>
-                <% if (erroreLogin){ %>
+                <% if (erroreLog){ %>
                     <text class="erroreReg"> username o pws sbagliate </text>
                     <% } %>
 
@@ -53,10 +53,10 @@
         <a href="enginegame.html" class="btn-area">Gioca contro stockfish 11</a> 
         <a href="pvpgame.html" class="btn-area">Gioca contro un amico</a><br>
         Nuovo su FrogChess.com? Clicca
-        <a class="reglink" onclick="openRegForm()">qui</a>
+        <a class="reglink underline" onclick="openRegForm()">QUI</a>
         per registrarti
         <div class="form-popup" id="myRegForm">
-            <form action="/registrazione" method="POST" class="form-container">
+            <form action="/accesso?typ=registrazione" method="POST" class="form-container">
                 <h1 style="color:black">Registrazione</h1>
                 <label for="username" style="color:black"><b>Username</b></label>
                 <input type="text" placeholder="Enter username" name="username" required>
@@ -94,7 +94,7 @@
         <% if (erroreReg){ %>
             <script>openRegForm();</script>
             <% } %>
-                <% if (erroreLogin){ %>
+                <% if (erroreLog){ %>
                     <script>openLoginForm();</script>
                     <% } %>
 

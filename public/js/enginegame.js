@@ -1,5 +1,8 @@
 var game = engineGame({book: '../book.bin'});
 function inviaDati(risultato,livello,username){
+    /**
+     * invia dati alla route /updateStats?username="username" con allegati risultato e livello della partita
+     */
     axios.post(`/updateStats?username=${username}`,{ risultato: risultato, livello:livello});
 }
 newGame();
@@ -157,12 +160,11 @@ function engineGame(options) {
         } else {
             let risultato;
             let livello = $("#skillLevel").val();
-            //TODO
-            const isRanked = $("#isRanked").text(); 
+            const isRanked = $("#isRanked").text().toUpperCase(); 
             const username = $("#username").text();
             //il turno attuale è quello dell'avversario non del vincitore
             console.log(isRanked);
-            if(isRanked ==="RANKED"){
+            if(isRanked ==="RANKED" || isRanked === "CLASSIFICATA"){
                 if(!game.in_draw()){
                     if (playerColor === "white" && game.turn() === "w") risultato = "sconfitte";
                     if (playerColor === "white" && game.turn() === "b") risultato = "vittorie";

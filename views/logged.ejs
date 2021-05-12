@@ -3,7 +3,7 @@
 
 <head>
     <Title>FrogChess.com</Title>
-    <link rel="shortcut icon" type="image/ico" href="../public/img/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico">
     <link rel=stylesheet href="../bootstrap/dist/css/bootstrap.min.css">
     <link rel=stylesheet href="/css/index.css">
     <link rel=stylesheet href="/css/logged.css">
@@ -15,9 +15,9 @@
         <nav>
             <ul class="nav-area">
                 <li><a href="/">Home</a></li>
-                <li><a href="../public/Notizie.html">Notizie</a></li>
-                <li><a href="../public/Impara.html">Impara</a></li>
-                <li><a href="../public/About.html">About</a></li>
+                <li><a href="/Notizie.html">Notizie</a></li>
+                <li><a href="/Impara.html">Impara</a></li>
+                <li><a href="/About.html">About</a></li>
             </ul>
         </nav>
         <a href="/" class="btn-area">Logout</a>
@@ -28,14 +28,14 @@
         </h1>
         <br>
         <div class="button-wrapper">
-            <a href="/game?username=<%=username%>" class="btn-area">Gioca contro stockfish(classificata)</a>
-            <a href="../enginegame.html" class="btn-area">Gioca contro stockfish(non classificata)</a>
-            <a href="../pvpgame.html" class="btn-area">Gioca contro un amico(non classificata)</a>
+            <a href="/game?username=<%=username%>&password=<%=password%>" class="btn-area">Gioca contro stockfish(classificata)</a>
+            <a href="../enginegame.html" class="btn-area">Gioca contro stockfish</a>
+            <a href="../pvpgame.html" class="btn-area">Gioca contro un amico</a>
         </div>
         <br>
         <table>
             <tr>
-                <th>livelo</th>
+                <th>livello</th>
                 <th>Vittorie</th>
                 <th>Pareggi</th>
                 <th>Sconfitte</th>
