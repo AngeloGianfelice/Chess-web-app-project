@@ -30,11 +30,31 @@ async function catchdata(id){
     else{
         board3.position(fen);
         $('.h23').css("display","block");
-        $('#nome3').text(nome);
+        $('#nome3').text("nome");
         $('#nome3').css("display","block");
         $('#descrizione3').text(file.aperture[nome].descrizione);
         $('#descrizione3').css("display","block");
     }
+}
+function svuota_scacchiera(id){
+    if(id==='#1.e4'){
+        board1.start();
+        $('.h21').css("display","none");
+        $('#nome1').css("display","none");
+        $('#descrizione1').css("display","none");
+    }else if(id==='#1.d4'){
+        board2.start();
+        $('.h22').css("display","none");
+        $('#nome2').css("display","none");
+        $('#descrizione2').css("display","none");
+    }
+    else{
+        board3.start();
+        $('.h23').css("display","none");
+        $('#nome3').css("display","none");
+        $('#descrizione3').css("display","none");
+    }
+
 }
     
 

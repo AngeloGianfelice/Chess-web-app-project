@@ -67,7 +67,7 @@
             <div class="row" style="margin-bottom: 50px;">
                 <div class="column left">
                     <h1>1.e4</h1>
-                    <select class="dropdown" id="#1.e4" name="1.e4">
+                    <select onchange="display_opening('#1.e4')" class="dropdown" id="#1.e4" name="1.e4">
                         <option value="difesa francese" selected="selected">difesa francese</option>
                         <option value="difesa siciliana">difesa siciliana</option>
                         <option value="apertura Ruy Lopez">apertura Ruy Lopez</option>
@@ -80,7 +80,7 @@
                         <option value="partita viennese">partita viennese</option>
                     </select>
                     <br><br>
-                    <button class="btn-area" onclick="display_opening('#1.e4')">Invia</button>
+                    <button class="btn-area" onclick="svuota_scacchiera('#1.e4')">SVUOTA</button>
                 </div>
                 <div class="column middle">
                     <div id="myBoard1" style="width: 500px"></div>
@@ -96,7 +96,7 @@
             <div class="row" style="margin-bottom: 50px";>
                 <div class="column left">
                     <h1>1.d4</h1>
-                    <select class="dropdown" id="#1.d4" name="1.d4">
+                    <select onchange="display_opening('#1.d4')" class="dropdown" id="#1.d4" name="1.d4">
                         <option value="gambetto di Donna" selected="selected">gambetto di Donna</option>
                         <option value="difesa slava">difesa slava</option>
                         <option value="difesa Est-indiana">difesa Est-indiana</option>
@@ -109,7 +109,7 @@
                         <option value="difesa Benoni Moderna">difesa Benoni Moderna</option>
                     </select>
                     <br><br>
-                    <button class="btn-area" onclick="display_opening('#1.d4')">Invia</button>
+                    <button class="btn-area" onclick="svuota_scacchiera('#1.d4')">SVUOTA</button>
                 </div>
                 <div class="column middle">
                     <div id="myBoard2" style="width: 500px"></div>
@@ -125,7 +125,7 @@
             <div class="row">
                 <div class="column left">
                     <h1>Altre</h1>
-                    <select class="dropdown" id="Altre" name="Altre">
+                    <select onchange="display_opening('Altre')" class="dropdown" id="Altre" name="Altre">
                         <option value="apertura catalana" selected="selected">apertura catalana</option>
                         <option value="apertura Reti">apertura Reti</option>
                         <option value="apertura inglese">apertura inglese</option>
@@ -137,7 +137,7 @@
                         <option value="attacco Grob">attacco Grob</option>
                     </select>
                     <br><br>
-                    <button class="btn-area" onclick="display_opening('Altre')">Invia</button>
+                    <button class="btn-area" onclick="svuota_scacchiera('Altre')">SVUOTA</button>
                 </div>
                 <div class="column middle">
                     <div id="myBoard3" style="width: 500px"></div>

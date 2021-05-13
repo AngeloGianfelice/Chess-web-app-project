@@ -1,3 +1,6 @@
+fetchnews().catch(err =>{
+    console.log(err);
+});
 async function fetchnews(){
     const response = await fetch("/fide",{method:"POST", body:"application/json"});
     const text= await response.text();
@@ -21,6 +24,3 @@ async function fetchnews(){
     $('.loader').css("display","none");
 }
 
-fetchnews().catch(err =>{
-    console.log(err);
-});
