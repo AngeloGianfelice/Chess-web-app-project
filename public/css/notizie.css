@@ -50,3 +50,15 @@
   background-color: white;
   color:black;
 }
+
+.notizie {
+  font-size:40px;
+  position: absolute;
+  left:72px;
+  cursor:auto;
+}
+
+.notizie:hover {
+  background-color: white;
+  color: black;
+}

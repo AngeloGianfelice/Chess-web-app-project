@@ -46,6 +46,7 @@ header{
     color:#fff;
 }
 .nav-area li a:hover{
+    text-decoration: none;
     color:#d22938;
 }
 .btn-area{
@@ -60,6 +61,7 @@ header{
     background:transparent;
 }
 .btn-area:hover{
+    text-decoration: none;
     background: #d22938;
     color:#fff;
 }

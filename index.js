@@ -164,7 +164,7 @@ app.get("/game", async (req, res) => {
     const { username, password } = req.query;
     const query = await utente.findOne({ username: username, password: password });
     if (!query) return res.send("sei un limit tester, mi piace il tuo carattere");
-    res.render("game.ejs", { username: username })
+    res.render("game.ejs", { username: username });
 });
 
 app.post("/updateStats", async (req, res) => {
@@ -181,11 +181,13 @@ app.post('/fide', async (req, res) => {
     const scraped = await scrapesite("https://www.fide.com/news").catch(err => {
         console.log(err);
     });
+        
     res.json(scraped);
-})
+});
+ 
 
 async function scrapesite(url) {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({args:['--no-sandbox']});
     const page = await browser.newPage();
     await page.goto(url);
     const [e1] = await page.$x("/html/body/app-root/app-client/app-news/app-client-news-top/section/div[1]/div/div[2]/app-client-news-general[1]/a/img");
