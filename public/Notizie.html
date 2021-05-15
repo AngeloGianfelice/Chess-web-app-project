@@ -22,11 +22,11 @@
             <canvas id="empty" style="width:100px;background-color:transparent;"></canvas>
         </header>
         <section style="padding-top: 2%;">
-            <text class="btn-area title notizie">Notizie</text>
+            <div class="btn-area title notizie">Notizie</div>
             <button class="btn-area title" onclick="document.location.reload()" style="position: relative;
-            left: 90%;">Ricarica</button>
+            left: 90%;top:3%">Ricarica</button>
             <div class="loader"></div>
-            <div class="row" style="margin-top: +50px;">
+            <div class="row">
                 <div class="column">
                     <a id="link1">
                     <img class="foto" id="foto1">
@@ -57,6 +57,82 @@
                     </a><br>
                     <text class="titolo" id="titolo5"></text>    
                 </div>
+            </div>
+            <div class="mini"></div>
+            <div id="rating-table">
+              <text class="btn-area title notizie"style="top:91%">Classifica live Top 10 Giocatori di Scacchi</text><br>
+                <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Federazione</th>
+                        <th scope="col">Rating</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">1</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img1"><text id="text1">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img2"><text id="text2">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">3</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img3"><text id="text3">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">4</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img4"><text id="text4">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">5</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img5"><text id="text5">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">6</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img6"><text id="text6">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">7</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img7"><text id="text7">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">8</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img8"><text id="text8">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">9</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img9"><text id="text9">-</text></td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">10</td>
+                        <td>-</td>
+                        <td><img class="flags" id="img10"><text id="text10">-</text></td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
         </section>
         <script src="js/webscraper.js"></script>
