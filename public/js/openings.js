@@ -30,7 +30,7 @@ async function catchdata(id){
     else{
         board3.position(fen);
         $('.h23').css("display","block");
-        $('#nome3').text("nome");
+        $('#nome3').text(nome);
         $('#nome3').css("display","block");
         $('#descrizione3').text(file.aperture[nome].descrizione);
         $('#descrizione3').css("display","block");
