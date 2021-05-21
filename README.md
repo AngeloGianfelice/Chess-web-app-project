@@ -1,4 +1,4 @@
-# Chess-web-app-project
+# FROGCHESS
 Link Sito web: https://frogchess.herokuapp.com/ 
 Questo progetto è stato realizzato da Angelo Gianfelice e
 Luigi Morsello per il corso di  Linguaggi e Tecnologie Web anno 2020/21.
