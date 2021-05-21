@@ -2,7 +2,8 @@
     background-color: white;
     border-radius: 30px;
     height: 300px;
-    margin-top: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 
 }
 .column{
@@ -55,8 +56,7 @@
 
 .notizie {
   font-size:40px;
-  position: absolute;
-  left:72px;
+  width:fit-content;
   cursor:auto;
 }
 
@@ -90,9 +90,10 @@ tbody{
   height: 50px;
   -webkit-animation: spin 1s linear infinite; /* Safari */
   animation: spin 1s linear infinite;
-  position :absolute;
-  top:93%;
+  position: absolute;
+  top:100%;
   left:90%;
 }
+
 
 

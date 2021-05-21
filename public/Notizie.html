@@ -23,8 +23,6 @@
         </header>
         <section style="padding-top: 2%;">
             <div class="btn-area title notizie">Notizie</div>
-            <button class="btn-area title" onclick="document.location.reload()" style="position: relative;
-            left: 90%;top:3%">Ricarica</button>
             <div class="loader"></div>
             <div class="row">
                 <div class="column">
@@ -58,9 +56,13 @@
                     <text class="titolo" id="titolo5"></text>    
                 </div>
             </div>
-            <div class="mini"></div>
+            <div style="text-align:right">
+              <button class="btn-area title" onclick="document.location.reload()" style="margin-right: 0;">Ricarica</button>
+            </div>
             <div id="rating-table">
-              <text class="btn-area title notizie"style="top:91%">Classifica live Top 10 Giocatori di Scacchi</text><br>
+              <div class="mini"></div>
+              <text class="btn-area title notizie">Classifica live Top 10 Giocatori di Scacchi</text>
+              <br><br>
                 <table class="table">
                     <thead class="thead-dark">
                       <tr>
