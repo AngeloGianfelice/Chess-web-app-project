@@ -15,8 +15,7 @@ const saltRounds = 12;
 
 //database packages
 const mongoose = require("mongoose");
-const { allowedNodeEnvironmentFlags } = require('process');
-mongoose.connect("mongodb+srv://lewis:cjb07@cluster0.ysajr.mongodb.net/databaseUtenti", { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect(process.env.DB_URL, { useUnifiedTopology: true, useNewUrlParser: true });
 const schemaUtente = {
     username: String,
     password: String,
