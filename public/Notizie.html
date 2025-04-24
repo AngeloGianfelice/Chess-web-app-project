@@ -7,6 +7,113 @@
     <link rel=stylesheet href="bootstrap/dist/css/bootstrap.min.css">
     <link rel=stylesheet href="css/index.css">
     <link rel=stylesheet href="css/notizie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .iframe-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 30px auto;
+            padding: 0;
+            height: 600px; /* Fixed height container */
+            position: relative;
+            overflow: visible; /* Allow iframe to use its own scrolling */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: block; /* Prevent inline spacing issues */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .btn-area.title.notizie {
+            background-color: #0062cc;
+            color: white;
+            border: 2px solid white;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            text-transform: uppercase;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+            width: 100%;
+            max-width: 1000px;
+        }
+        
+        .btn-area.title.notizie:hover {
+            background-color: #0062cc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            border: 2px solid #f0f0f0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .logo {
+                width: 80px;
+                height: auto;
+            }
+            
+            .nav-area li {
+                margin-left: 10px;
+            }
+            
+            .iframe-container {
+                height: 500px;
+            }
+            
+            .btn-area.title {
+                font-size: 1.5rem;
+                padding: 8px 16px;
+            }
+            
+            footer {
+                font-size: 0.8rem;
+                padding: 10px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            header {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            
+            .nav-area {
+                margin-top: 15px;
+                padding: 0;
+            }
+            
+            .nav-area li {
+                margin: 5px;
+            }
+            
+            .iframe-container {
+              overflow: hidden;
+                height: 400px;
+            }
+            
+            #empty {
+                display: none;
+            }
+            
+            footer {
+                text-align: center;
+            }
+        }
+        
+        /* Container for better mobile layout */
+        section {
+            max-width: 1020px;
+            margin: 0 auto;
+            padding: 2% 15px;
+            overflow-x: hidden; /* Prevents horizontal scroll */
+        }
+    </style>
     </head>
     <body>
         <header>
@@ -21,123 +128,20 @@
             </nav>
             <canvas id="empty" style="width:100px;background-color:transparent;"></canvas>
         </header>
-        <section style="padding-top: 2%;">
+        <section>
             <div class="btn-area title notizie">Notizie</div>
-            <div class="loader"></div>
-            <div class="row">
-                <div class="column">
-                    <a id="link1">
-                    <img class="foto" id="foto1">
-                    </a><br>
-                    <text class="titolo" id="titolo1"></text>
-                </div>
-                <div class="column">
-                    <a id="link2">
-                    <img class="foto" id="foto2">
-                    </a><br>
-                    <text class="titolo" id="titolo2"></text>    
-                </div>
-                <div class="column">
-                    <a id="link3">
-                    <img class="foto" id="foto3">
-                    </a><br>
-                    <text class="titolo" id="titolo3"></text>    
-                </div>
-                <div class="column">
-                    <a id="link4">
-                    <img class="foto" id="foto4">
-                    </a><br>
-                    <text class="titolo" id="titolo4"></text>    
-                </div>
-                <div class="column">
-                    <a id="link5">
-                    <img class="foto" id="foto5">
-                    </a><br>
-                    <text class="titolo" id="titolo5"></text>    
-                </div>
+            
+            <div class="iframe-container">
+                <iframe src="https://www.fide.com/news/" title="FIDE News"></iframe>
             </div>
-            <div style="text-align:right">
-              <button class="btn-area title" onclick="document.location.reload()" style="margin-right: 0;">Ricarica</button>
-            </div>
-            <div id="rating-table">
-              <div class="mini"></div>
-              <text class="btn-area title notizie">Classifica live Top 10 Giocatori di Scacchi</text>
-              <br><br>
-                <table class="table">
-                    <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Federazione</th>
-                        <th scope="col">Rating</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row">1</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img1"><text id="text1">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">2</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img2"><text id="text2">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">3</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img3"><text id="text3">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">4</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img4"><text id="text4">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">5</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img5"><text id="text5">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">6</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img6"><text id="text6">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">7</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img7"><text id="text7">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">8</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img8"><text id="text8">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">9</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img9"><text id="text9">-</text></td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">10</td>
-                        <td>-</td>
-                        <td><img class="flags" id="img10"><text id="text10">-</text></td>
-                        <td>-</td>
-                      </tr>
-                    </tbody>
-                  </table>
+            
+            <div class="btn-area title notizie">Classifica live Top 100 Giocatori di Scacchi</div>
+            
+            <div class="iframe-container">
+                <iframe src="https://ratings.fide.com/top_lists.phtml?list=open" title="FIDE Ratings"></iframe>
             </div>
         </section>
-        <script src="js/webscraper.js"></script>
+        
         <footer>Per informazioni ci puoi contattare agli indirizzi: gianfelice.1851260@studenti.uniroma1.it o
             morsello.1851339@studenti.uniroma1.it</footer>
     </body>

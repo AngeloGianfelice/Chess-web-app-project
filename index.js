@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 console.log('Initializing server ...');
 
 const express = require('express');
@@ -10,7 +12,7 @@ const puppeteer = require('puppeteer');
 const ejs = require("ejs");
 
 //package cifratura password
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const saltRounds = 12;
 
 //database packages

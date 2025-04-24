@@ -4,7 +4,6 @@
     height: 300px;
     margin-top: 1%;
     margin-bottom: 1%;
-
 }
 .column{
     float: left;
@@ -93,6 +92,75 @@ tbody{
   position: absolute;
   top:100%;
   left:90%;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .row {
+    height: auto;
+  }
+  
+  .column {
+    width: 33.33%;
+  }
+  
+  .notizie {
+    font-size: 32px;
+  }
+  
+  .mini {
+    left: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 50%;
+  }
+  
+  .notizie {
+    font-size: 28px;
+  }
+  
+  .mini {
+    width: 40px;
+    height: 40px;
+    border-width: 12px;
+    left: 80%;
+  }
+  
+  .titolo {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 576px) {
+  .column {
+    width: 100%;
+  }
+  
+  .notizie {
+    font-size: 24px;
+  }
+  
+  .mini {
+    width: 30px;
+    height: 30px;
+    border-width: 8px;
+    left: 75%;
+  }
+  
+  .loader {
+    width: 80px;
+    height: 80px;
+    border-width: 12px;
+    left: 40%;
+  }
+  
+  .flags[src] {
+    width: 15%;
+    max-width: 15%;
+  }
 }
 
 
