@@ -1,5 +1,5 @@
 # FROGCHESS
-Link Sito web: https://frogchess.herokuapp.com/.
+Link Sito web: https://frogchess.thatguyuli.me
 
 Questo progetto è stato realizzato da Angelo Gianfelice e
 Luigi Morsello per il corso di  Linguaggi e Tecnologie Web anno 2020/21.
